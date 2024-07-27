@@ -1,0 +1,31 @@
+name = "framework-hono"
+compatibility_date = "2023-12-01"
+compatibility_flags = ["nodejs_compat"]
+main = "src/index.ts"
+account_id = ""
+workers_dev = true
+
+
+
+[vars]
+INNGEST_DEV = ""
+INNGEST_SERVE_HOST = "http://localhost:3000" # force the Dev Server to access the app at this local URL
+INNGEST_BASE_URL="http://127.0.0.1:8288"
+
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
